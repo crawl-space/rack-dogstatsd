@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Rack middleware for dogstatsd}
   spec.description   = %q{Rack middleware for dogstatsd}
-  spec.homepage      = "https://github.com/jbowes/rack-dogstatsd"
+  spec.homepage      = "https://github.com/emvalenzuela/rack-dogstatsd"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_runtime_dependency 'dogstatsd-ruby', '~> 1.5', '>= 1.5.0'
+  spec.add_runtime_dependency 'dogstatsd-ruby', '~> 3.3'
 
   spec.add_development_dependency "bundler", "~> 1.10"
   spec.add_development_dependency "rake", "~> 10.0"
