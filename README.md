@@ -1,6 +1,6 @@
 # Rack::Dogstatsd
 
-A Rack middleware for sending metrics to DataDog's Statsd implementation.
+A Rack middleware for sending metrics to Datadog's Statsd implementation.
 
 ## Installation
 
