@@ -1,4 +1,4 @@
-require 'statsd'
+require 'datadog/statsd'
 
 module Rack
   class DogStatsd
@@ -6,9 +6,9 @@ module Rack
     def initialize(app, options = {})
       @app = app
 
-      host = options[:host] || 'localhost'
-      port = options[:port] || 8125
-      @statsd = options[:statsd] || Statsd.new(host, port, **options)
+      host = options[:host]
+      port = options[:port]
+      @statsd = options[:statsd] || Datadog::Statsd.new(host, port, **options)
       @metric = options[:metric] || 'rack-dogstatsd.response.time'
     end
 
