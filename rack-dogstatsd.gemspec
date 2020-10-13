@@ -6,12 +6,12 @@ require 'rack/dogstatsd/version'
 Gem::Specification.new do |spec|
   spec.name          = "rack-dogstatsd"
   spec.version       = Rack::DogStatsd::VERSION
-  spec.authors       = ["James Bowes"]
-  spec.email         = ["jbowes@repl.ca"]
+  spec.authors       = ["James Bowes", "Pieter Mulder"]
+  spec.email         = ["jbowes@repl.ca", "pieter.mulder@wooga.net"]
 
   spec.summary       = %q{Rack middleware for dogstatsd}
   spec.description   = %q{Rack middleware for dogstatsd}
-  spec.homepage      = "https://github.com/jbowes/rack-dogstatsd"
+  spec.homepage      = "https://github.com/wooga/rack-dogstatsd"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
