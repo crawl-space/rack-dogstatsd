@@ -2,7 +2,7 @@ Unmaintained. If you're still using it and want to take ownership, let me know.
 
 # Rack::Dogstatsd
 
-A Rack middleware for sending metrics to DataDog's Statsd implementation.
+A Rack middleware for sending metrics to Datadog's Statsd implementation.
 
 ## Installation
 
